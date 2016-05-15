@@ -6,7 +6,6 @@ import junit.framework.TestSuite;
 public class CalcTestSuite {
 
 	public static Test suite() {
-
 		TestSuite suite = new TestSuite();
 		suite.addTestSuite(TestCase01.class);
 		suite.addTestSuite(TestCase02.class);

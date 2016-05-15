@@ -20,13 +20,12 @@ public class TestCase09 extends TestCase {
 	@Before
 	public void setUp() throws Exception {
 		driver = new FirefoxDriver();
-		baseUrl = "http://www.calculadoraonline.com.br/basica";
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		 baseUrl = "http://www.calculadoraonline.com.br/calculadora-virtual-gratis";
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Test
 	public void test09() throws Exception {
-		// driver.get(baseUrl + "/calculadora-virtual-gratis");
 		driver.get(baseUrl);
 		driver.findElement(By.xpath("(//td[@onclick='add(this.innerHTML)'])[5]")).click();
 		driver.findElement(By.xpath("(//td[@onclick='add(this.innerHTML)'])[12]")).click();
